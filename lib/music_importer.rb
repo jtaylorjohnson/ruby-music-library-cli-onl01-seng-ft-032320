@@ -1,10 +1,10 @@
 class MusicImporter
   
-  @@files = []
+
   
   def initialize(path)
     @path = path
-    @@files << path
+ 
   end
   
   def path
@@ -17,7 +17,6 @@ class MusicImporter
   
   def import
     files.each {|filename| Song.create_from_filename(filename)}
-    @@files << files
   end
   
   
