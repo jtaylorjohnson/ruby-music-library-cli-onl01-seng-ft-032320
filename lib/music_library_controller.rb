@@ -106,6 +106,7 @@ class MusicLibraryController
       song = songs_sorted_by_name[input+1]
       puts "Playing #{song.name} by #{song.artist.name}"
     end
+    end
   end
 
   
