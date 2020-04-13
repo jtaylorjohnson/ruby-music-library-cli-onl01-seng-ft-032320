@@ -101,7 +101,7 @@ class MusicLibraryController
     self.list_songs
     input = gets.strip.to_i
     if (1..Song.all.length).include?(input)
-      song = songs_sorted_by_name[input+2]
+      song = songs_sorted_by_name[input+1]
       puts "Playing #{song.name} by #{song.artist.name}"
     end
   end
